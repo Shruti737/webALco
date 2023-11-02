@@ -118,7 +118,7 @@
       border-radius: 15px;
       font-size: 1.3rem;
   }
-
+</style>
     /* Style for the dropdown container */
     .dropdown {
         position: relative;
@@ -161,7 +161,63 @@
     .dropdown:hover .dropdown-content {
         display: block;
     }
+
+<style>
+    /* Style for the dropdown container */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Style for the dropdown menu trigger (Services in this case) */
+    .dropbtn {
+        background-color: #3498db;
+        color: white;
+        padding: 12px 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* Style for the dropdown content */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    /* Style for each item in the dropdown */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    /* Change color on hover for the dropdown items */
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    /* Show the dropdown menu when hovering over the trigger */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Additional styles for the dropdown menu */
+    .dropdown-content {
+        border: 1px solid #ddd;
+        border-top: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        z-index: 1;
+    }
 </style>
+
+
 
   
 
