@@ -41,7 +41,13 @@
 
 /* HOME section */
 #home {
-    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%; /* Adjust the height to place the search bar in the middle */
+    position: relative;
+    padding: 60px 0; /* You can adjust the padding as needed */
     text-align: center;
 }
 
