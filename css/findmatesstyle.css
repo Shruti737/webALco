@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiquidLove - Find Mates</title>
+    <link rel="stylesheet" href="css/findmatesstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li class="item"><a href="index.html">Home</a></li>
+                <li class="item dropdown">
+                    <a class="dropbtn">Services</a>
+                    <div class="dropdown-content">
+                        <a href="find-mates.html">Find Mates</a>
+                        <a>Reserve Table</a>
+                        <a>Customer Support</a>
+                    </div>
+                </li>
+                <li class="item"><a href="#">Chat Room</a></li>
+                <li class="item"><a href="#">Friend List</a></li>
+                <li class="item"><a href="#">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Cards -->
+    <div class="main">
+        <div class="card">
+            <div class="image">
+                <img src="mate1.jpg" alt="Mate 1">
+            </div>
+            <div class="des">
+                <h1>Name: XYZ</h1>
+                <p>Gender: XYZ</p>
+                <p>Age: XYZ</p>
+                <button>Read More...</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="mate2.jpg" alt="Mate 2">
+            </div>
+            <div class="des">
+                <h1>Name: XYZ</h1>
+                <p>Gender: XYZ</p>
+                <p>Age: XYZ</p>
+                <button>Read More...</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="mate3.jpg" alt="Mate 3">
+            </div>
+            <div class="des">
+                <h1>Name: XYZ</h1>
+                <p>Gender: XYZ</p>
+                <p>Age: XYZ</p>
+                <button>Read More...</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="mate4.jpg" alt="Mate 4">
+            </div>
+            <div class="des">
+                <h1>Name: XYZ</h1>
+                <p>Gender: XYZ</p>
+                <p>Age: XYZ</p>
+                <button>Read More...</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
 
