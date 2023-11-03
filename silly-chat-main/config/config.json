@@ -1,0 +1,17 @@
+{
+    "botConfig": [
+        {
+            "token": "bottoken",
+            "prefix": "g!",
+            "logchannel": "id for channel where logs go",
+            "dreamstudiokey": "beta.dreamstudio.ai",
+            "bid": "brainshop.ai BID",
+            "key": "brainshop.ai KEY",
+            "sillychatapikey": "api.sillychat.tech",
+            "cdnkey": "check cdn folder",
+            "mongodb": "mongodb url",
+            "screenshotkey": "check read me",
+            "topggauthkey": "get from top.gg"
+         }
+    ]
+}
