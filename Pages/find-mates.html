@@ -7,69 +7,73 @@
       <link rel="stylesheet" href="css/findmatesstyle.css">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Baloo+Bhai+2&display=swap" rel="stylesheet">
 </head>
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            width: 300px;
+            margin: 10px;
+        }
+        
+        .card-header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        
+        .card-body {
+            padding: 20px;
+        }
+        
+        .card-title {
+            font-size: 24px;
+            margin: 0;
+        }
+        
+        .card-text {
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
+</head>
 <body>
-    <header>
-        <nav id="navbar">
-            <ul>
-                <li class="item"><a href="index.html">Home</a></li>
-                <li class="item dropdown">
-                    <a class="dropbtn">Services</a>
-                    <div class="dropdown-content">
-                        <a href="find-mates.html">Find Mates</a>
-                        <a>Reserve Table</a>
-                        <a>Customer Support</a>
-                    </div>
-                </li>
-                <li class="item"><a href="#">Chat Room</a></li>
-                <li class="item"><a href="#">Friend List</a></li>
-                <li class="item"><a href="#">Profile</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- Cards -->
-    <div class="main">
+    <div class="container">
         <div class="card">
-            <div class="image">
-                <img src="mate1.jpg" alt="Mate 1">
+            <div class="card-header">
+                Card 1
             </div>
-            <div class="des">
-                <h1>Name: XYZ</h1>
-                <p>Gender: XYZ</p>
-                <p>Age: XYZ</p>
-                <button>Read More...</button>
+            <div class="card-body">
+                <h2 class="card-title">Card Title 1</h2>
+                <p class="card-text">This is a sample card with some sample content. You can customize it as needed.</p>
             </div>
         </div>
         <div class="card">
-            <div class="image">
-                <img src="mate2.jpg" alt="Mate 2">
+            <div class="card-header">
+                Card 2
             </div>
-            <div class="des">
-                <h1>Name: XYZ</h1>
-                <p>Gender: XYZ</p>
-                <p>Age: XYZ</p>
-                <button>Read More...</button>
-            </div>
-        </div>
-        <div class="card">
-            <div class="image">
-                <img src="mate3.jpg" alt="Mate 3">
-            </div>
-            <div class="des">
-                <h1>Name: XYZ</h1>
-                <p>Gender: XYZ</p>
-                <p>Age: XYZ</p>
-                <button>Read More...</button>
-            </div>
-        </div>
-        <div class="card">
-            <div class="image">
-                <img src="mate4.jpg" alt="Mate 4">
-            </div>
-            <div class="des">
-                <h1>Name: XYZ</h1>
-                <p>Gender: XYZ</p>
-                <p>Age: XYZ</p>
-                <button>Read More...</button>
+            <div class="card-body">
+                <h2 class="card-title">Card Title 2</h2>
+                <p class="card-text">This is another sample card with some sample content. Feel free to change the content and style.</p>
             </div>
         </div>
     </div>
