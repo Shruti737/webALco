@@ -1,1 +1,0 @@
-this folder is needed for commands such as image scan!
