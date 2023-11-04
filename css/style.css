@@ -4,15 +4,20 @@
     padding: 0;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /* Navigation Styles */
 #navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.7); /* 70% translucent black background */
+    background: rgba(0, 0, 0, 0.7);
+    /* 70% translucent black background */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 10px 20px;
     z-index: 1;
@@ -21,7 +26,6 @@
 #navbar ul {
     list-style: none;
     display: flex;
-    margin-right: 20px;
 }
 
 #navbar li {
@@ -43,9 +47,10 @@
 #home {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    height: 100vh; /* Set the height to full viewport height for vertical centering */
+    height: 100vh;
+    /* Set the height to full viewport height for vertical centering */
     position: relative;
     text-align: center;
 }
@@ -75,10 +80,16 @@
 
 #Search {
     height: 50px;
-    width: 80%;
     border-radius: 25px;
     padding: 10px;
     font-size: 1.2rem;
+}
+
+form.d-flex {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
 }
 
 .btn-search {
@@ -86,11 +97,30 @@
     border: 2px solid white;
     background-color: rgba(46, 95, 208, 0.8);
     color: white;
+    width: 50%;
+    margin: 0 auto;
     font-size: 1.2rem;
     border-radius: 25px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
-    margin-top: 20px; /* Add margin to separate it from the text */
+    margin-top: 20px;
+    /* Add margin to separate it from the text */
+}
+
+#filters {
+    margin: 2rem auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#filters select {
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    margin: 0 10px;
+    width: 200px;
+    outline: black 1px solid;
 }
 
 .btn-search:hover {
@@ -108,12 +138,14 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    background: rgba(0, 0, 0, 0.7); /* 70% translucent black background */
+    background: rgba(0, 0, 0, 0.7);
+    /* 70% translucent black background */
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     opacity: 0;
-    transition: opacity 0.3s; /* Add a transition for smooth appearance/disappearance */
+    transition: opacity 0.3s;
+    /* Add a transition for smooth appearance/disappearance */
 }
 
 /* Style for each item in the dropdown */
@@ -126,17 +158,71 @@
 
 /* Change color on hover for the dropdown items */
 .dropdown-content a:hover {
-    background-color: pink;
+    background-color: #242424
 }
 
 /* Show the dropdown menu when hovering over the trigger */
 .dropdown:hover .dropdown-content {
     display: block;
-    opacity: 1; /* Make it fully visible on hover */
+    opacity: 1;
+    /* Make it fully visible on hover */
 }
 
 /* Additional styles for the dropdown menu */
 .dropdown-content {
     border: 1px solid #ddd;
     border-top: none;
+}
+
+.tagline {
+    font-size: 4rem;
+    color: white;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Footer */
+footer .footer-container {
+    background-color: pink;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 12px 12px 0 0;
+}
+
+div.left-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+div.right-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+div.right-col input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    outline: black 1px solid;
+}
+
+footer .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+footer .social-icon {
+    margin: 0 auto;
+    width: 1rem;
+    display: flex;
+    justify-content: space-between;
 }
