@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,13 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Baloo+Bhai+2&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <nav id="navbar">
+            <div>
+                <h1 class="logo"><a href="#">LiquidLove</a></h1>
+            </div>
             <ul>
                 <li class="item"><a href="#">Home</a></li>
                 <li class="item dropdown">
@@ -20,19 +25,76 @@
                         <a>Customer Support</a>
                     </div>
                 </li>
-                <li class="item"><a href="Pages/chatroom.html">Chat Room</a></li> <!-- Add this line for the Chat Room -->
+                <li class="item dropdown">
+                    <a href="Pages/chatroom.html" class="dropbtn">Chat Room</a>
+                    <div class="dropdown-content">
+                        <a href="Pages/global-chatroom.html">Global Room</a>
+                        <a href="Pages/private-chatroom.html">Private Room</a>
+                    </div>
+                </li>
+                <!-- Add this line for the Chat Room -->
                 <li class="item"><a href="#">Friend List</a></li>
-                <li class="item"><a href="#">Profile</a></li>
+                <li class="item dropdown">
+                    <a class="dropbtn">Profile</a>
+                    <div class="dropdown-content">
+                        <a href="Pages/profile.html">My Profile</a>
+                        <a href="Pages/edit-profile.html">Edit Profile</a>
+                        <a href="Pages/setting.html">Setting</a>
+                        <a href="Pages/privacy.html">Previous Pools</a>
+                        <a href="Pages/login.html">Log Out</a>
+                    </div>
+                </li>
             </ul>
         </nav>
     </header>
 
     <section id="home">
         <form action="" class="d-flex">
-            <input class="form-control flex-fill" type="search" placeholder="Search" id="Search">
+            <input class="form-control flex-fill" type="search" placeholder="Search by pincode or cafe name"
+                id="Search">
             <button class="btn-search">Search</button>
         </form>
+        <div id="filters">
+            <select name="brand" id="brand">
+                <option>No Input</option>
+                <option>Old Monk</option>
+                <option>Black Dog</option>
+                <option>Breezer</option>
+                <option>Kingfisher</option>
+                <option>Carlsberg</option>
+                <option>Heineken</option>
+                <option>Corona</option>
+                <option>Jack Daniels</option>
+                <option>Others</option>
+            </select>
+            <select name="budget" id="budget">
+                <option>No Input</option>
+                <option>5000-7500</option>
+                <option>7500-10000</option>
+                <option>10000-15000</option>
+                <option>15000-20000</option>
+            </select>
+            <select name="age" id="age">
+                <option>No Input</option>
+                <option>18-25</option>
+                <option>25-30</option>
+                <option>30-35</option>
+                <option>35-40</option>
+                <option>40-45</option>
+                <option>45-50</option>
+                <option>50-55</option>
+                <option>55+</option>
+            </select>
+            <select name="gender" id="gender">
+                <option>No Input</option>
+                <option>Unisex</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Others</option>
+            </select>
+        </div>
     </section>
 
 </body>
+
 </html>

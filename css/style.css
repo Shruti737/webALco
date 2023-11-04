@@ -12,7 +12,7 @@
     width: 100%;
     background: rgba(0, 0, 0, 0.7); /* 70% translucent black background */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 10px 20px;
     z-index: 1;
@@ -21,7 +21,6 @@
 #navbar ul {
     list-style: none;
     display: flex;
-    margin-right: 20px;
 }
 
 #navbar li {
@@ -75,10 +74,16 @@
 
 #Search {
     height: 50px;
-    width: 80%;
     border-radius: 25px;
     padding: 10px;
     font-size: 1.2rem;
+}
+
+form.d-flex {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
 }
 
 .btn-search {
@@ -86,11 +91,27 @@
     border: 2px solid white;
     background-color: rgba(46, 95, 208, 0.8);
     color: white;
+    width: 50%;
+    margin: 0 auto;
     font-size: 1.2rem;
     border-radius: 25px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
     margin-top: 20px; /* Add margin to separate it from the text */
+}
+
+#filters {
+    margin: 2rem auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#filters select {
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    margin: 0 10px;
 }
 
 .btn-search:hover {
@@ -126,7 +147,7 @@
 
 /* Change color on hover for the dropdown items */
 .dropdown-content a:hover {
-    background-color: pink;
+    background-color: #242424
 }
 
 /* Show the dropdown menu when hovering over the trigger */
@@ -140,3 +161,4 @@
     border: 1px solid #ddd;
     border-top: none;
 }
+
