@@ -1,53 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Chat Room</title>
-    <style>
-        #chat-container {
-            width: 300px;
-            border: 1px solid #ccc;
-            padding: 10px;
-        }
-        #chat-messages {
-            height: 200px;
-            overflow: scroll;
-            border: 1px solid #ccc;
-            padding: 5px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiquidLove</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Baloo+Bhai+2&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="chat-container">
-        <h2>Chat Room</h2>
-        <div id="chat-messages"></div>
-        <input type="text" id="message" placeholder="Type your message">
-        <button onclick="sendMessage()">Send</button>
-    </div>
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li class="item"><a href="#">Home</a></li>
+                <li class="item dropdown">
+                    <a class="dropbtn">Services</a>
+                    <div class="dropdown-content">
+                        <a href="Pages/find-mates.html">Find Mates</a>
+                        <a>Reserve Table</a>
+                        <a>Customer Support</a>
+                    </div>
+                </li>
+                <li class="item"><a href="chatroom.html">Chat Room</a></li> <!-- Updated link here -->
+                <li class="item"><a href="#">Friend List</a></li>
+                <li class="item"><a href="#">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <script>
-        const socket = new WebSocket("ws://your_server_address_here");
+    <section id="home">
+        <form action="" class="d-flex">
+            <input class="form-control flex-fill" type="search" placeholder="Search" id="Search">
+            <button class="btn-search">Search</button>
+        </form>
+    </section>
 
-        socket.addEventListener("message", (event) => {
-            const chatMessages = document.getElementById("chat-messages");
-            const messageElement = document.createElement("p");
-            messageElement.textContent = event.data;
-            chatMessages.appendChild(messageElement);
-        });
-
-        function sendMessage() {
-            const messageInput = document.getElementById("message");
-            const message = messageInput.value;
-            messageInput.value = "";
-
-            if (message) {
-                const chatMessages = document.getElementById("chat-messages");
-                const messageElement = document.createElement("p");
-                messageElement.textContent = "You: " + message;
-                chatMessages.appendChild(messageElement);
-
-                socket.send(message);
-            }
-        }
-    </script>
 </body>
 </html>
